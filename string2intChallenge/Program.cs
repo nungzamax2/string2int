@@ -17,6 +17,10 @@ namespace string2intChallenge
         static int string2intChallenge(string input)
         {
             int output = 0;
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                return 0;
+            }
             foreach (var _char in input)
             {
                 if (_char >= '0' && _char <= '9')
