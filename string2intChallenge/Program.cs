@@ -23,10 +23,11 @@ namespace string2intChallenge
             }
             foreach (var _char in input)
             {
-                if (_char >= '0' && _char <= '9')
+                if (_char >= 48 && _char <= 57)
                 {
                     output *= 10;
-                    output += _char - '0';
+                    int realNum = _char - 48;
+                    output += realNum;
                 }
             }
             return output;
